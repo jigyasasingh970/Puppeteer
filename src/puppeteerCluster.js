@@ -20,7 +20,7 @@ const { Cluster } = require('puppeteer-cluster');
     console.log(`${i}: ${msg._args[i]}`);
 });
   await page.addScriptTag({
-    path: './script1.js' 
+    path: './script.js' 
   }).catch(err=>console.log(err));
   });
 
@@ -35,7 +35,7 @@ const { Cluster } = require('puppeteer-cluster');
         console.log(`${i}: ${msg._args[i]}`);
     });
       await page.addScriptTag({
-        path: './mem-exhaust2.js' 
+        path: './script.js' 
       }).catch(err=>console.log(err));
   });
 
@@ -50,7 +50,7 @@ const { Cluster } = require('puppeteer-cluster');
      });
      //await page.setDefaultNavigationTimeout(60000); 
        await page.addScriptTag({
-         path: './script3.js' 
+         path: './script.js' 
        }).catch(err=>console.log(err));
    });
    
@@ -66,7 +66,7 @@ const { Cluster } = require('puppeteer-cluster');
          console.log(`${i}: ${msg._args[i]}`);
      });
        await page.addScriptTag({
-         path: './script4.js' 
+         path: './script.js' 
        }).catch(err=>console.log(err));
    });
    //console.log("Executed in"+(Date.now()-start)+' ms');
